@@ -19,7 +19,7 @@ import seaborn as sns
 # plt.rcParams["axes.unicode_minus"] = False
 
 # 한글 폰트 설정
-plt.rcParams['font.family'] = "NanumGothic"
+plt.rcParams['font.family'] = "Malgun Gothic"
 plt.rcParams['axes.unicode_minus'] = False
 
 st.set_page_config(page_title="퇴직율 대시보드", layout="wide")
@@ -92,3 +92,4 @@ if col_name in df.columns:
         ax3.set_ylabel("퇴직율(%)"); 
         ax3.bar_label(ax3.containers[0], fmt="%.1f")
         st.pyplot(fig3)
+
